@@ -190,8 +190,7 @@ const collisionWithStar = () => {
 };
 
 const collisionWithEnemy = () => {
-  console.log(`emoji vale: ${emoji.innerHTML}`);
-  console.log(`enemy vale: ${enemy.innerHTML}`);
+  if (!emoji || !enemy) return false;
   const emojiLeft = emoji.getBoundingClientRect().left;
   const emojiRight = emoji.getBoundingClientRect().right;
   const enemyLeft = enemy.getBoundingClientRect().left;
