@@ -5,17 +5,7 @@ let stripes = document.getElementsByTagName("main")[0].children;
 let star, point;
 let counter = 0;
 let enemy;
-const enemojis = [
-  "ðŸ’©",
-  "ðŸ”",
-  "ðŸ¦„",
-  "ðŸ¼",
-  "ðŸ¤–",
-  "ðŸ¥",
-  "ðŸ’¾",
-  "ðŸ§¹",
-  "ðŸ§¬"
-];
+const enemojis = ["💩", "🍔", "🦄", "🐼", "🤖", "🥁", "💾", "🧹", "🧬"];
 
 let currentExpression, previousExpression;
 
@@ -77,7 +67,7 @@ const removeText = () => {
 };
 
 const moveEmojiUp = () => {
-  emoji.innerHTML = "ðŸ˜²";
+  emoji.innerHTML = "😲";
 
   if (currentStripe > 0) {
     currentStripe -= 1;
@@ -86,7 +76,7 @@ const moveEmojiUp = () => {
 };
 
 const moveEmojiDown = () => {
-  emoji.innerHTML = "ðŸ˜ ";
+  emoji.innerHTML = "😠";
 
   if (currentStripe < 6) {
     currentStripe += 1;
@@ -94,12 +84,12 @@ const moveEmojiDown = () => {
   }
 };
 
-const showNeutralFace = () => (emoji.innerHTML = "ðŸ˜");
+const showNeutralFace = () => (emoji.innerHTML = "😐");
 
 const generateStar = () => {
   star = document.createElement("p");
   star.classList.add("star");
-  star.innerHTML = "â­";
+  star.innerHTML = "⭐";
 
   positionStar();
 };
